@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>galvanize</h1>
+  </header>
+  <main>
+    <section>
+      <h2 id="signup">Pay Your Bill</h2>
+    </section>
+    <form action="https://floating-thicket-27184.herokuapp.com/charge" method="POST" id="payment-form">
+      <div class="form-row">
+        <label for="card-element">
+      <strong>Your Balance is <bold>$387.00</bold></strong><br>
+  Credit or debit card
+  </label>
+        <br><br><br><input min="0" max="387" name="amount" id="amount" placeholder="Input amount here~!" type="number" class="req"></input><br><br>
+        <div id="card-element">
+
+        </div>
+
+        <div id="card-errors" role="alert"></div>
+      </div>
+      <button class="button button-block">Submit Payment</button>
+      <h1 class="message"</h1>
+    </form>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="./main.js"></script>
+  </main>
+</body>
+
+</html>
